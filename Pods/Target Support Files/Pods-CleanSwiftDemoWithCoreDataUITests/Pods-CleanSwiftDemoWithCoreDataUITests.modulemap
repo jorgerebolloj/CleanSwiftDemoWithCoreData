@@ -1,0 +1,6 @@
+framework module Pods_CleanSwiftDemoWithCoreDataUITests {
+  umbrella header "Pods-CleanSwiftDemoWithCoreDataUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
