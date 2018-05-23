@@ -5,3 +5,9 @@
   Created by Jorge Rebollo Jimenez on 23/05/18.
   Copyright © 2018 personal. All rights reserved.
 */
+
+"Label_Label" = "Etiqueta";
+
+"Message_Message" = "Mensaje";
+
+"Error_Error" = "Error";

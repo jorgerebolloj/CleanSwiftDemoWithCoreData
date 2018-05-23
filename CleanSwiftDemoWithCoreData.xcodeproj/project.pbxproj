@@ -33,6 +33,7 @@
 		EAF46AAA20B35C2F000CB0EE /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF46A9920B35C2E000CB0EE /* LoginWorker.swift */; };
 		EAF46AAB20B35C2F000CB0EE /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF46A9920B35C2E000CB0EE /* LoginWorker.swift */; };
 		EAFD7D4820B5B49700EB1939 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAFD7D4A20B5B49700EB1939 /* Localizable.strings */; };
+		EAFD7D4E20B5B7B700EB1939 /* LocalizableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD7D4D20B5B7B700EB1939 /* LocalizableHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		EAFD7D4720B5B43300EB1939 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		EAFD7D4920B5B49700EB1939 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EAFD7D4B20B5B49D00EB1939 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		EAFD7D4D20B5B7B700EB1939 /* LocalizableHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 		EAF46AAF20B35D83000CB0EE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EAFD7D4C20B5B75C00EB1939 /* Helpers */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -255,6 +258,14 @@
 				EAFD7D4A20B5B49700EB1939 /* Localizable.strings */,
 			);
 			path = Localizations;
+			sourceTree = "<group>";
+		};
+		EAFD7D4C20B5B75C00EB1939 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EAFD7D4D20B5B7B700EB1939 /* LocalizableHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +406,7 @@
 				EAF46A9D20B35C2F000CB0EE /* LoginModels.swift in Sources */,
 				3053447320AF263400CE2D81 /* CleanSwiftDemoWithCoreData.xcdatamodeld in Sources */,
 				EAF46AA620B35C2F000CB0EE /* LoginViewController.swift in Sources */,
+				EAFD7D4E20B5B7B700EB1939 /* LocalizableHelper.swift in Sources */,
 				EAF46AA920B35C2F000CB0EE /* LoginWorker.swift in Sources */,
 				EAF46AA320B35C2F000CB0EE /* LoginRouter.swift in Sources */,
 				3053446B20AF263400CE2D81 /* AppDelegate.swift in Sources */,
