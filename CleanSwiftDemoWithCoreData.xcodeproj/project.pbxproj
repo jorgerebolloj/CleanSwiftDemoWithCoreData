@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3053446B20AF263400CE2D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053446A20AF263400CE2D81 /* AppDelegate.swift */; };
-		3053446D20AF263400CE2D81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053446C20AF263400CE2D81 /* ViewController.swift */; };
 		3053447020AF263400CE2D81 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3053446E20AF263400CE2D81 /* Login.storyboard */; };
 		3053447320AF263400CE2D81 /* CleanSwiftDemoWithCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3053447120AF263400CE2D81 /* CleanSwiftDemoWithCoreData.xcdatamodeld */; };
 		3053447520AF263B00CE2D81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3053447420AF263B00CE2D81 /* Assets.xcassets */; };
@@ -55,7 +54,6 @@
 /* Begin PBXFileReference section */
 		3053446720AF263400CE2D81 /* CleanSwiftDemoWithCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanSwiftDemoWithCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3053446A20AF263400CE2D81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3053446C20AF263400CE2D81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3053446F20AF263400CE2D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		3053447220AF263400CE2D81 /* CleanSwiftDemoWithCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CleanSwiftDemoWithCoreData.xcdatamodel; sourceTree = "<group>"; };
 		3053447420AF263B00CE2D81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,17 +121,16 @@
 		3053446920AF263400CE2D81 /* CleanSwiftDemoWithCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				3053446A20AF263400CE2D81 /* AppDelegate.swift */,
+				EAF46AB520B35E01000CB0EE /* Common */,
 				EAF46AAC20B35D68000CB0EE /* Extensions */,
 				EAF46AAE20B35D7E000CB0EE /* Models */,
-				EAF46AAF20B35D83000CB0EE /* Services */,
-				EAF46AB020B35D89000CB0EE /* Workers */,
 				EAF46AB120B35D9B000CB0EE /* Modules */,
-				EAF46AB520B35E01000CB0EE /* Common */,
+				EAB446E420B50D18002AFF8B /* Persistence */,
 				EAF46AB620B35E11000CB0EE /* Resources */,
+				EAF46AAF20B35D83000CB0EE /* Services */,
 				EAF46AB720B35E21000CB0EE /* SupportingFiles */,
-				3053446A20AF263400CE2D81 /* AppDelegate.swift */,
-				3053446C20AF263400CE2D81 /* ViewController.swift */,
-				3053447120AF263400CE2D81 /* CleanSwiftDemoWithCoreData.xcdatamodeld */,
+				EAF46AB020B35D89000CB0EE /* Workers */,
 			);
 			path = CleanSwiftDemoWithCoreData;
 			sourceTree = "<group>";
@@ -154,6 +151,14 @@
 				3053448F20AF263B00CE2D81 /* Info.plist */,
 			);
 			path = CleanSwiftDemoWithCoreDataUITests;
+			sourceTree = "<group>";
+		};
+		EAB446E420B50D18002AFF8B /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				3053447120AF263400CE2D81 /* CleanSwiftDemoWithCoreData.xcdatamodeld */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 		EAF46AAC20B35D68000CB0EE /* Extensions */ = {
@@ -180,6 +185,7 @@
 		EAF46AB020B35D89000CB0EE /* Workers */ = {
 			isa = PBXGroup;
 			children = (
+				EAF46A9920B35C2E000CB0EE /* LoginWorker.swift */,
 			);
 			path = Workers;
 			sourceTree = "<group>";
@@ -209,7 +215,6 @@
 				EAF46A9620B35C2E000CB0EE /* LoginPresenter.swift */,
 				EAF46A9720B35C2E000CB0EE /* LoginRouter.swift */,
 				EAF46A9820B35C2E000CB0EE /* LoginViewController.swift */,
-				EAF46A9920B35C2E000CB0EE /* LoginWorker.swift */,
 			);
 			path = LoginScene;
 			sourceTree = "<group>";
@@ -375,7 +380,6 @@
 				3053447320AF263400CE2D81 /* CleanSwiftDemoWithCoreData.xcdatamodeld in Sources */,
 				EAF46AA620B35C2F000CB0EE /* LoginViewController.swift in Sources */,
 				EAF46AA920B35C2F000CB0EE /* LoginWorker.swift in Sources */,
-				3053446D20AF263400CE2D81 /* ViewController.swift in Sources */,
 				EAF46AA320B35C2F000CB0EE /* LoginRouter.swift in Sources */,
 				3053446B20AF263400CE2D81 /* AppDelegate.swift in Sources */,
 			);
